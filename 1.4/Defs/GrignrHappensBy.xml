@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <PawnKindDef>
+        <defName>Taggerung_ShardOfGrignr</defName>
+        <label>grignr</label>
+        <labelMale>grignr</labelMale>
+        <labelFemale>grignr</labelFemale>
+        <labelPlural>members of clan Grignrson</labelPlural>
+        <race>Human</race>
+        <defaultFactionType>Pirate</defaultFactionType>
+        <combatPower>69</combatPower>
+        <minGenerationAge>35</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <isFighter>true</isFighter>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Taggerung_Grignrson_Xenotype>999</Taggerung_Grignrson_Xenotype>
+            </xenotypeChances>
+        </xenotypeSet>
+        <chemicalAddictionChance>0.50</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>Tribal</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>Offworld</li>
+                    <li>Outlander</li>
+                    <li>Outsider</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <invNutrition>10.0</invNutrition>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>Beer</thingDef>
+                    <countRange>6</countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>5</countRange>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>500~1500</weaponMoney>
+        <forceWeaponQuality>Masterwork</forceWeaponQuality>
+        <weaponTags Inherit="False">
+            <li>Axe</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>Bladelink</li>
+        </weaponTags>
+        <apparelTags Inherit="False">
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Headgear_BearPolar</li>
+        </apparelRequired>
+        <apparelDisallowTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>BeltDefenseTox</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+            <li>SpacerMilitary</li>
+        </apparelDisallowTags>
+        <apparelColor>(255,255,255)</apparelColor>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <favoriteColor>(255,255,255)</favoriteColor>
+        <forcedHair MayRequire="Erin.Hair2">ERNrivia</forcedHair>
+        <forcedHairColor>RGBA(0.787, 0.595, 0.347, 1.000)</forcedHairColor>
+        <skinColorOverride>RGBA(1.000, 0.929, 0.827, 1.000)</skinColorOverride>
+        <fixedGender>Male</fixedGender>
+        <nameMaker>Taggerung_Grignrson_NameMaker</nameMaker>
+        <techHediffsMaxAmount>1</techHediffsMaxAmount>
+        <techHediffsRequired>
+            <li>PsychicAmplifier</li>
+        </techHediffsRequired>
+        <biocodeWeaponChance>0.0</biocodeWeaponChance>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>0~2</initialResistanceRange>
+        <combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
+        <factionLeader>false</factionLeader>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>0~0</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>17~20</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>0~8</range>
+            </li>
+        </skills>
+        <forcedTraits Inherit="False">
+            <RT_TalentSwordsman MayRequire="Sierra.RT.MedievalTalents" />
+            <VTE_AbsentMinded MayRequire="VanillaExpanded.VanillaTraitsExpanded" />
+            <NaturalMood>1</NaturalMood>
+            <Tough />
+        </forcedTraits>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>TooSmart</li>
+            <li>Wimp</li>
+            <li>GreatMemory</li>
+        </disallowedTraits>
+        <disallowedTraitsWithDegree>
+            <DrugDesire>-1</DrugDesire>
+        </disallowedTraitsWithDegree>
+    </PawnKindDef>
+
+    <RulePackDef>
+        <defName>Taggerung_Grignrson_NameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Grignr Grignr Grignrson</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <XenotypeDef>
+        <defName>Taggerung_Grignrson_Xenotype</defName>
+        <label>Shard of Grignr</label>
+        <description>The many Grignrs, splintered across the multiverse have retained their unique genetic makeup despite being exposed to extreme hyper-concentrated levels of stupidity.\nThey retain a dependency on booze so strong that it has changed their very genetic makeup, they are tough and exceptional melee fighters that would never use a cowards weapon, while unfortunately being absolute idiots.</description>
+        <descriptionShort>Grignr Smash!</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+        <inheritable>true</inheritable>
+        <combatPowerFactor>1.6</combatPowerFactor>
+        <genes>
+            <li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
+            <li MayRequire="sarg.alphagenes">AlphaGenes_AnimalSumMajor_Bear_Grizzly</li>
+            <li MayRequire="sarg.alphagenes">AG_HardBones</li>
+            <li MayRequire="sarg.alphagenes">AG_Filthy</li>
+            <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_SlowNeuralHeat</li>
+            <li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
+            <li>Aggression_Aggressive</li>
+            <li>AptitudeTerrible_Shooting</li>
+            <li>AptitudeTerrible_Crafting</li>
+            <li>AptitudeTerrible_Artistic</li>
+            <li>AptitudeTerrible_Medicine</li>
+            <li>AptitudeTerrible_Intellectual</li>
+            <li>Body_Hulk</li>
+            <li>ChemicalDependency_Alcohol</li>
+            <li>Hair_SandyBlonde</li>
+            <li>Learning_Slow</li>
+            <li>MaxTemp_LargeIncrease</li>
+            <li>MeleeDamage_Strong</li>
+            <li>MinTemp_LargeDecrease</li>
+            <li>NakedSpeed</li>
+            <li>Nearsighted</li>
+            <li>Robust</li>
+            <li>Unstoppable</li>
+            <li>WoundHealing_Fast</li>
+        </genes>
+    </XenotypeDef>
+</Defs>
