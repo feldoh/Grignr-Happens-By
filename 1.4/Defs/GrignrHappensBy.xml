@@ -61,9 +61,7 @@
             <li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
         </apparelTags>
-        <apparelRequired>
-            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Headgear_BearPolar</li>
-        </apparelRequired>
+        <apparelRequired />
         <apparelDisallowTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -128,7 +126,38 @@
         <defName>Taggerung_Grignrson_NameMaker</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name->Grignr Grignr Grignrson</li>
+                <li>r_name(p=10)->Grignr Grignr Grignrson</li>
+                <li>r_name->[GrignrNick] [ShardWithSuffix] Grignrson</li>
+
+                <li>GrignrNick->Grignr</li>
+
+                <li>ShardWithSuffix->[Shard] Shard of Grignr</li>
+
+                <li>Shard(p=2)->69th</li>
+                <li>Shard(p=2)->420th</li>
+                <li>Shard(p=2)->666th</li>
+                <li>Shard->2nd</li>
+                <li>Shard->12th</li>
+                <li>Shard->13th</li>
+                <li>Shard->25th</li>
+                <li>Shard->72nd</li>
+                <li>Shard->99th</li>
+                <li>Shard->134th</li>
+                <li>Shard->223rd</li>
+                <li>Shard->699th</li>
+                <li>Shard->768th</li>
+                <li>Shard->1111st</li>
+                <li>Shard->1403rd</li>
+                <li>Shard->1145th</li>
+                <li>Shard->2773rd</li>
+                <li>Shard->6621st</li>
+                <li>Shard->7864th</li>
+                <li>Shard->9012th</li>
+                <li>Shard->23579th</li>
+                <li>Shard->43542nd</li>
+                <li>Shard->90201st</li>
+                <li>Shard->432122nd</li>
+                <li>Shard->11432122nd</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -143,7 +172,7 @@
         <combatPowerFactor>1.6</combatPowerFactor>
         <genes>
             <li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
-            <li MayRequire="sarg.alphagenes">AlphaGenes_AnimalSumMajor_Bear_Grizzly</li>
+            <li MayRequire="sarg.alphagenes">AlphaGenes_AnimalSumMajor_Bear_Polar</li>
             <li MayRequire="sarg.alphagenes">AG_HardBones</li>
             <li MayRequire="sarg.alphagenes">AG_Filthy</li>
             <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_SlowNeuralHeat</li>
@@ -168,4 +197,57 @@
             <li>WoundHealing_Fast</li>
         </genes>
     </XenotypeDef>
+
+    <ThingDef ParentName="HatBase" Name="Taggerung_Grignr_Hat">
+        <defName>Taggerung_Grignr_Hat</defName>
+        <tradeability>Buyable</tradeability>
+        <techLevel>Neolithic</techLevel>
+        <label>grignrson hat</label>
+        <description>A majestic item of headwear made from the pelt of of a mighty Joris lined with Snowhare fur. The original was made from a beast struck down in single combat, though if this is THE Hat of Grignr himself, who is to say. There is some light staining which might be, blood, beer or something more sinister.\n\nWearing this headpiece represents one as a member of the legendary Grignrson clan at a mere glance.\n\nWhen a Grignrson makes their hat they often must spend many hours working with the slain animals to eventually emerge triumphant with a hat worthy of a Grignrson.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(254,254,254)</color>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite />
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Corpse_Bear_Polar>1</Corpse_Bear_Polar>
+            <Corpse_Snowhare>1</Corpse_Snowhare>
+            <Silver>42</Silver>
+        </costList>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <WorkToMake>10000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <Insulation_Cold>42</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <wornGraphicPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</wornGraphicPath>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 </Defs>

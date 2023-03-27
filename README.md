@@ -1,5 +1,5 @@
 <p>
-  <a href="https://steamcommunity.com/sharedfiles/itemedittext/?id=2932093508" alt="Steam Workshop Link">
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2932093508" alt="Steam Workshop Link">
   <img src="https://img.shields.io/static/v1?label=Steam&message=Workshop&color=blue&logo=steam&link=https://steamcommunity.com/sharedfiles/filedetails/?id=2932093508"/>
   </a>
 </p>
@@ -22,7 +22,7 @@ For full value you will want the following additional mods:
 * [Royalty (Axe and powers)](https://store.steampowered.com/app/1149640/RimWorld__Royalty/)
 * [Biotech (Gene System)](https://store.steampowered.com/app/1826140/RimWorld__Biotech/)
 * [Alpha Genes (Grignr's bear summon, and other genes)](https://steamcommunity.com/sharedfiles/filedetails/?id=2891845502)
-* [Medieval overhaul (Grignr's iconic hat)](https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067)
+* [Medieval overhaul (Grignr's original hat if you prefer it)](https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067)
 * [Erin.Hair2 (Grignr's Haircut)](https://steamcommunity.com/sharedfiles/filedetails/?id=2849477421)
 * [Medieval Talents (Grignr's warrior talent)](https://steamcommunity.com/sharedfiles/filedetails/?id=1916352291)
 * [Integrated Genes (Grignr's mage ability)](https://steamcommunity.com/sharedfiles/filedetails/?id=2884115974)
@@ -48,3 +48,4 @@ This work is believed to be in the public domain in the United States because it
 * Mr Samuel Streamer for the inspiration.
 * Jim Theis for creating the original Grignr.
 * Marnador for the [RimWorld font](https://rimworldbase.com/rimworld-logo-fan-made-font/).
+* Teslov for creating the standalone art for Grignr's iconic hat.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="DankPyon_Headgear_BearPolar"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="Taggerung_ShardOfGrignr"]/apparelRequired</xpath>
+            <value>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Headgear_BearPolar</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="Taggerung_ShardOfGrignr"]/apparelRequired</xpath>
+            <value>
+                <li>Taggerung_Grignr_Hat</li>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
