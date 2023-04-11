@@ -15,7 +15,7 @@
 		<isFighter>true</isFighter>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Taggerung_Grignrson_Xenotype>999</Taggerung_Grignrson_Xenotype>
+				<Taggerung_Grignrson_Xenotype MayRequire="Ludeon.RimWorld.Biotech">999</Taggerung_Grignrson_Xenotype>
 			</xenotypeChances>
 		</xenotypeSet>
 		<chemicalAddictionChance>0.50</chemicalAddictionChance>
@@ -82,7 +82,7 @@
 		<nameMaker>Taggerung_Grignrson_NameMaker</nameMaker>
 		<techHediffsMaxAmount>1</techHediffsMaxAmount>
 		<techHediffsRequired>
-			<li>PsychicAmplifier</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PsychicAmplifier</li>
 		</techHediffsRequired>
 		<biocodeWeaponChance>0.0</biocodeWeaponChance>
 		<initialWillRange>0~0</initialWillRange>
@@ -261,7 +261,7 @@
 		</rulePack>
 	</RulePackDef>
 
-	<XenotypeDef>
+	<XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Taggerung_Grignrson_Xenotype</defName>
 		<label>Shard of Grignr</label>
 		<description>The many Grignrs, splintered across the multiverse have retained their unique genetic makeup despite being exposed to extreme hyper-concentrated levels of stupidity.\nThey retain a dependency on booze so strong that it has changed their very genetic makeup, they are tough and exceptional melee fighters that would never use a cowards weapon, while unfortunately being absolute idiots.</description>
