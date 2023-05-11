@@ -3,6 +3,7 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.dds
 
 # Build results
 [Dd]ebug/

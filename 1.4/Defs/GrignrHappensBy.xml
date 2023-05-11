@@ -1,352 +1,423 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
-	<PawnKindDef>
-		<defName>Taggerung_ShardOfGrignr</defName>
-		<label>grignr</label>
-		<labelMale>grignr</labelMale>
-		<labelFemale>grignr</labelFemale>
-		<labelPlural>members of clan Grignrson</labelPlural>
-		<race>Human</race>
-		<defaultFactionType>Pirate</defaultFactionType>
-		<combatPower>69</combatPower>
-		<minGenerationAge>35</minGenerationAge>
-		<maxGenerationAge>55</maxGenerationAge>
-		<isFighter>true</isFighter>
-		<xenotypeSet Inherit="False">
-			<xenotypeChances>
-				<Taggerung_Grignrson_Xenotype MayRequire="Ludeon.RimWorld.Biotech">999</Taggerung_Grignrson_Xenotype>
-			</xenotypeChances>
-		</xenotypeSet>
-		<chemicalAddictionChance>0.50</chemicalAddictionChance>
-		<backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>Tribal</li>
-				</categoriesChildhood>
-				<categoriesAdulthood>
-					<li>Offworld</li>
-					<li>Outlander</li>
-					<li>Outsider</li>
-				</categoriesAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-		<requiredWorkTags>
-			<li>Violent</li>
-		</requiredWorkTags>
-		<invNutrition>10.0</invNutrition>
-		<inventoryOptions>
-			<subOptionsTakeAll>
-				<li>
-					<thingDef>Beer</thingDef>
-					<countRange>6</countRange>
-				</li>
-				<li>
-					<thingDef>MedicineIndustrial</thingDef>
-					<countRange>5</countRange>
-				</li>
-			</subOptionsTakeAll>
-		</inventoryOptions>
-		<gearHealthRange>1~1</gearHealthRange>
-		<itemQuality>Good</itemQuality>
-		<weaponMoney>500~1500</weaponMoney>
-		<forceWeaponQuality>Masterwork</forceWeaponQuality>
-		<weaponTags Inherit="False">
-			<li>Axe</li>
-			<li>MedievalMeleeAdvanced</li>
-			<li>Bladelink</li>
-		</weaponTags>
-		<apparelTags Inherit="False">
-			<li>MedievalMeleeDecent</li>
-			<li>MedievalMeleeAdvanced</li>
-		</apparelTags>
-		<apparelRequired />
-		<apparelDisallowTags>
-			<li>IndustrialBasic</li>
-			<li>IndustrialAdvanced</li>
-			<li>IndustrialMilitaryBasic</li>
-			<li>IndustrialMilitaryAdvanced</li>
-			<li>BeltDefenseTox</li>
-			<li>SpacerMilitary</li>
-			<li>BeltDefensePop</li>
-			<li>SpacerMilitary</li>
-		</apparelDisallowTags>
-		<apparelColor>(255,255,255)</apparelColor>
-		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(255,255,255)</favoriteColor>
-		<forcedHair MayRequire="Erin.Hair2">ERNrivia</forcedHair>
-		<forcedHairColor>RGBA(0.787, 0.595, 0.347, 1.000)</forcedHairColor>
-		<skinColorOverride>RGBA(1.000, 0.929, 0.827, 1.000)</skinColorOverride>
-		<fixedGender>Male</fixedGender>
-		<nameMaker>Taggerung_Grignrson_NameMaker</nameMaker>
-		<techHediffsMaxAmount>1</techHediffsMaxAmount>
-		<techHediffsRequired>
-			<li MayRequire="Ludeon.RimWorld.Ideology">PsychicAmplifier</li>
-		</techHediffsRequired>
-		<biocodeWeaponChance>0.0</biocodeWeaponChance>
-		<initialWillRange>0~0</initialWillRange>
-		<initialResistanceRange>0~2</initialResistanceRange>
-		<combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
-		<factionLeader>false</factionLeader>
-		<humanPregnancyChance>0</humanPregnancyChance>
-		<useFactionXenotypes>false</useFactionXenotypes>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>0~0</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>17~20</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>0~8</range>
-			</li>
-		</skills>
-		<forcedTraits Inherit="False">
-			<RT_TalentSwordsman MayRequire="Sierra.RT.MedievalTalents" />
-			<VTE_AbsentMinded MayRequire="VanillaExpanded.VanillaTraitsExpanded" />
-			<NaturalMood>1</NaturalMood>
-			<Tough />
-		</forcedTraits>
-		<disallowedTraits>
-			<li>ShootingAccuracy</li>
-			<li>TooSmart</li>
-			<li>Wimp</li>
-			<li>GreatMemory</li>
-		</disallowedTraits>
-		<disallowedTraitsWithDegree>
-			<DrugDesire>-1</DrugDesire>
-		</disallowedTraitsWithDegree>
-	</PawnKindDef>
+    <PawnKindDef>
+        <defName>Taggerung_ShardOfGrignr</defName>
+        <label>grignr</label>
+        <labelMale>grignr</labelMale>
+        <labelFemale>grignr</labelFemale>
+        <labelPlural>members of clan Grignrson</labelPlural>
+        <race>Human</race>
+        <defaultFactionType>Pirate</defaultFactionType>
+        <combatPower>69</combatPower>
+        <minGenerationAge>35</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <isFighter>true</isFighter>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Taggerung_Grignrson_Xenotype MayRequire="Ludeon.RimWorld.Biotech">999</Taggerung_Grignrson_Xenotype>
+            </xenotypeChances>
+        </xenotypeSet>
+        <chemicalAddictionChance>0.50</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>Tribal</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>Offworld</li>
+                    <li>Outlander</li>
+                    <li>Outsider</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <invNutrition>10.0</invNutrition>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>Beer</thingDef>
+                    <countRange>6</countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>5</countRange>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>500~1500</weaponMoney>
+        <forceWeaponQuality>Masterwork</forceWeaponQuality>
+        <weaponTags Inherit="False">
+            <li>Axe</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>Bladelink</li>
+        </weaponTags>
+        <apparelTags Inherit="False">
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </apparelTags>
+        <apparelRequired />
+        <apparelDisallowTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>BeltDefenseTox</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+            <li>SpacerMilitary</li>
+        </apparelDisallowTags>
+        <apparelColor>(255,255,255)</apparelColor>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <favoriteColor>(255,255,255)</favoriteColor>
+        <forcedHair MayRequire="Erin.Hair2">ERNrivia</forcedHair>
+        <forcedHairColor>RGBA(0.787, 0.595, 0.347, 1.000)</forcedHairColor>
+        <skinColorOverride>RGBA(1.000, 0.929, 0.827, 1.000)</skinColorOverride>
+        <fixedGender>Male</fixedGender>
+        <nameMaker>Taggerung_Grignrson_NameMaker</nameMaker>
+        <techHediffsMaxAmount>1</techHediffsMaxAmount>
+        <techHediffsRequired>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PsychicAmplifier</li>
+        </techHediffsRequired>
+        <biocodeWeaponChance>0.0</biocodeWeaponChance>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>0~2</initialResistanceRange>
+        <combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
+        <factionLeader>false</factionLeader>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>0~0</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>17~20</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>0~8</range>
+            </li>
+        </skills>
+        <forcedTraits Inherit="False">
+            <RT_TalentSwordsman MayRequire="Sierra.RT.MedievalTalents" />
+            <VTE_AbsentMinded MayRequire="VanillaExpanded.VanillaTraitsExpanded" />
+            <NaturalMood>1</NaturalMood>
+            <Tough />
+        </forcedTraits>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>TooSmart</li>
+            <li>Wimp</li>
+            <li>GreatMemory</li>
+        </disallowedTraits>
+        <disallowedTraitsWithDegree>
+            <DrugDesire>-1</DrugDesire>
+        </disallowedTraitsWithDegree>
+    </PawnKindDef>
 
-	<RulePackDef>
-		<defName>Taggerung_Grignrson_NameMaker</defName>
-		<rulePack>
-			<rulesStrings>
-				<li>r_name(p=10)->Grignr Grignr Grignrson</li>
-				<li>r_name->[GrignrNick] [ShardWithSuffix] Grignrson</li>
+    <RulePackDef>
+        <defName>Taggerung_Grignrson_NameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=10)->Grignr Grignr Grignrson</li>
+                <li>r_name->[GrignrNick] [ShardWithSuffix] Grignrson</li>
 
-				<li>GrignrNick->Grignr</li>
+                <li>GrignrNick->Grignr</li>
 
-				<li>ShardWithSuffix->[Shard] Shard of Grignr</li>
+                <li>ShardWithSuffix->[Shard] Shard of Grignr</li>
 
-				<li>Shard(p=2)->69th</li>
-				<li>Shard(p=2)->420th</li>
-				<li>Shard(p=2)->666th</li>
-				<li>Shard->2nd</li>
-				<li>Shard->12th</li>
-				<li>Shard->13th</li>
-				<li>Shard->25th</li>
-				<li>Shard->72nd</li>
-				<li>Shard->99th</li>
-				<li>Shard->134th</li>
-				<li>Shard->317th</li>
-				<li>Shard->223rd</li>
-				<li>Shard->337th</li>
-				<li>Shard->451st</li>
-				<li>Shard->454th</li>
-				<li>Shard->525th</li>
-				<li>Shard->576th</li>
-				<li>Shard->579th</li>
-				<li>Shard->610th</li>
-				<li>Shard->644th</li>
-				<li>Shard->680th</li>
-				<li>Shard->699th</li>
-				<li>Shard->700th</li>
-				<li>Shard->756th</li>
-				<li>Shard->761st</li>
-				<li>Shard->768th</li>
-				<li>Shard->990th</li>
-				<li>Shard->1014th</li>
-				<li>Shard->1020th</li>
-				<li>Shard->1081st</li>
-				<li>Shard->1099th</li>
-				<li>Shard->1111st</li>
-				<li>Shard->1145th</li>
-				<li>Shard->1324th</li>
-				<li>Shard->1403rd</li>
-				<li>Shard->1844th</li>
-				<li>Shard->1875th</li>
-				<li>Shard->2211th</li>
-				<li>Shard->2235th</li>
-				<li>Shard->2236th</li>
-				<li>Shard->2367th</li>
-				<li>Shard->2369th</li>
-				<li>Shard->2393rd</li>
-				<li>Shard->2473rd</li>
-				<li>Shard->2537th</li>
-				<li>Shard->2656th</li>
-				<li>Shard->2674th</li>
-				<li>Shard->2684th</li>
-				<li>Shard->2710th</li>
-				<li>Shard->2714th</li>
-				<li>Shard->2750th</li>
-				<li>Shard->2773rd</li>
-				<li>Shard->2859th</li>
-				<li>Shard->2878th</li>
-				<li>Shard->2926th</li>
-				<li>Shard->2999th</li>
-				<li>Shard->3222nd</li>
-				<li>Shard->3475th</li>
-				<li>Shard->3513th</li>
-				<li>Shard->3556th</li>
-				<li>Shard->3617th</li>
-				<li>Shard->3637th</li>
-				<li>Shard->4155th</li>
-				<li>Shard->4156th</li>
-				<li>Shard->4159th</li>
-				<li>Shard->4246th</li>
-				<li>Shard->4338th</li>
-				<li>Shard->4518th</li>
-				<li>Shard->4562nd</li>
-				<li>Shard->4765th</li>
-				<li>Shard->4877th</li>
-				<li>Shard->4959th</li>
-				<li>Shard->4963rd</li>
-				<li>Shard->4991st</li>
-				<li>Shard->5007th</li>
-				<li>Shard->5016th</li>
-				<li>Shard->5522nd</li>
-				<li>Shard->5690th</li>
-				<li>Shard->5774th</li>
-				<li>Shard->5979th</li>
-				<li>Shard->6053rd</li>
-				<li>Shard->6392nd</li>
-				<li>Shard->6525th</li>
-				<li>Shard->6527th</li>
-				<li>Shard->6621st</li>
-				<li>Shard->6660th</li>
-				<li>Shard->6774th</li>
-				<li>Shard->6813th</li>
-				<li>Shard->6937th</li>
-				<li>Shard->7074th</li>
-				<li>Shard->7194th</li>
-				<li>Shard->7248th</li>
-				<li>Shard->7252nd</li>
-				<li>Shard->7309th</li>
-				<li>Shard->7359th</li>
-				<li>Shard->7406th</li>
-				<li>Shard->7561st</li>
-				<li>Shard->7575th</li>
-				<li>Shard->7646th</li>
-				<li>Shard->7654th</li>
-				<li>Shard->7717th</li>
-				<li>Shard->7864th</li>
-				<li>Shard->7886th</li>
-				<li>Shard->8124th</li>
-				<li>Shard->8376th</li>
-				<li>Shard->8397th</li>
-				<li>Shard->8505th</li>
-				<li>Shard->8563rd</li>
-				<li>Shard->8655th</li>
-				<li>Shard->8754th</li>
-				<li>Shard->9012th</li>
-				<li>Shard->9073rd</li>
-				<li>Shard->9214th</li>
-				<li>Shard->9288th</li>
-				<li>Shard->9352nd</li>
-				<li>Shard->9379th</li>
-				<li>Shard->9510th</li>
-				<li>Shard->9611th</li>
-				<li>Shard->9908th</li>
-				<li>Shard->23579th</li>
-				<li>Shard->43542nd</li>
-				<li>Shard->90201st</li>
-				<li>Shard->432122nd</li>
-				<li>Shard->11432122nd</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
+                <li>Shard(p=2)->69th</li>
+                <li>Shard(p=2)->420th</li>
+                <li>Shard(p=2)->666th</li>
+                <li>Shard->2nd</li>
+                <li>Shard->12th</li>
+                <li>Shard->13th</li>
+                <li>Shard->25th</li>
+                <li>Shard->72nd</li>
+                <li>Shard->99th</li>
+                <li>Shard->134th</li>
+                <li>Shard->317th</li>
+                <li>Shard->223rd</li>
+                <li>Shard->337th</li>
+                <li>Shard->451st</li>
+                <li>Shard->454th</li>
+                <li>Shard->525th</li>
+                <li>Shard->576th</li>
+                <li>Shard->579th</li>
+                <li>Shard->610th</li>
+                <li>Shard->644th</li>
+                <li>Shard->680th</li>
+                <li>Shard->699th</li>
+                <li>Shard->700th</li>
+                <li>Shard->756th</li>
+                <li>Shard->761st</li>
+                <li>Shard->768th</li>
+                <li>Shard->990th</li>
+                <li>Shard->1014th</li>
+                <li>Shard->1020th</li>
+                <li>Shard->1081st</li>
+                <li>Shard->1099th</li>
+                <li>Shard->1111st</li>
+                <li>Shard->1145th</li>
+                <li>Shard->1324th</li>
+                <li>Shard->1403rd</li>
+                <li>Shard->1844th</li>
+                <li>Shard->1875th</li>
+                <li>Shard->2211th</li>
+                <li>Shard->2235th</li>
+                <li>Shard->2236th</li>
+                <li>Shard->2367th</li>
+                <li>Shard->2369th</li>
+                <li>Shard->2393rd</li>
+                <li>Shard->2473rd</li>
+                <li>Shard->2537th</li>
+                <li>Shard->2656th</li>
+                <li>Shard->2674th</li>
+                <li>Shard->2684th</li>
+                <li>Shard->2710th</li>
+                <li>Shard->2714th</li>
+                <li>Shard->2750th</li>
+                <li>Shard->2773rd</li>
+                <li>Shard->2859th</li>
+                <li>Shard->2878th</li>
+                <li>Shard->2926th</li>
+                <li>Shard->2999th</li>
+                <li>Shard->3222nd</li>
+                <li>Shard->3475th</li>
+                <li>Shard->3513th</li>
+                <li>Shard->3556th</li>
+                <li>Shard->3617th</li>
+                <li>Shard->3637th</li>
+                <li>Shard->4155th</li>
+                <li>Shard->4156th</li>
+                <li>Shard->4159th</li>
+                <li>Shard->4246th</li>
+                <li>Shard->4338th</li>
+                <li>Shard->4518th</li>
+                <li>Shard->4562nd</li>
+                <li>Shard->4765th</li>
+                <li>Shard->4877th</li>
+                <li>Shard->4959th</li>
+                <li>Shard->4963rd</li>
+                <li>Shard->4991st</li>
+                <li>Shard->5007th</li>
+                <li>Shard->5016th</li>
+                <li>Shard->5522nd</li>
+                <li>Shard->5690th</li>
+                <li>Shard->5774th</li>
+                <li>Shard->5979th</li>
+                <li>Shard->6053rd</li>
+                <li>Shard->6392nd</li>
+                <li>Shard->6525th</li>
+                <li>Shard->6527th</li>
+                <li>Shard->6621st</li>
+                <li>Shard->6660th</li>
+                <li>Shard->6774th</li>
+                <li>Shard->6813th</li>
+                <li>Shard->6937th</li>
+                <li>Shard->7074th</li>
+                <li>Shard->7194th</li>
+                <li>Shard->7248th</li>
+                <li>Shard->7252nd</li>
+                <li>Shard->7309th</li>
+                <li>Shard->7359th</li>
+                <li>Shard->7406th</li>
+                <li>Shard->7561st</li>
+                <li>Shard->7575th</li>
+                <li>Shard->7646th</li>
+                <li>Shard->7654th</li>
+                <li>Shard->7717th</li>
+                <li>Shard->7864th</li>
+                <li>Shard->7886th</li>
+                <li>Shard->8124th</li>
+                <li>Shard->8376th</li>
+                <li>Shard->8397th</li>
+                <li>Shard->8505th</li>
+                <li>Shard->8563rd</li>
+                <li>Shard->8655th</li>
+                <li>Shard->8754th</li>
+                <li>Shard->9012th</li>
+                <li>Shard->9073rd</li>
+                <li>Shard->9214th</li>
+                <li>Shard->9288th</li>
+                <li>Shard->9352nd</li>
+                <li>Shard->9379th</li>
+                <li>Shard->9510th</li>
+                <li>Shard->9611th</li>
+                <li>Shard->9908th</li>
+                <li>Shard->23579th</li>
+                <li>Shard->43542nd</li>
+                <li>Shard->90201st</li>
+                <li>Shard->432122nd</li>
+                <li>Shard->11432122nd</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
 
-	<XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
-		<defName>Taggerung_Grignrson_Xenotype</defName>
-		<label>Shard of Grignr</label>
-		<description>The many Grignrs, splintered across the multiverse have retained their unique genetic makeup despite being exposed to extreme hyper-concentrated levels of stupidity.\nThey retain a dependency on booze so strong that it has changed their very genetic makeup, they are tough and exceptional melee fighters that would never use a cowards weapon, while unfortunately being absolute idiots.</description>
-		<descriptionShort>Grignr Smash!</descriptionShort>
-		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
-		<inheritable>true</inheritable>
-		<combatPowerFactor>1.6</combatPowerFactor>
-		<genes>
-			<li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
-			<li MayRequire="sarg.alphagenes">AlphaGenes_AnimalSumMajor_Bear_Polar</li>
-			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
-			<li MayRequire="sarg.alphagenes">AG_Filthy</li>
-			<li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_SlowNeuralHeat</li>
-			<li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
-			<li>Aggression_Aggressive</li>
-			<li>AptitudeTerrible_Shooting</li>
-			<li>AptitudeTerrible_Crafting</li>
-			<li>AptitudeTerrible_Artistic</li>
-			<li>AptitudeTerrible_Medicine</li>
-			<li>AptitudeTerrible_Intellectual</li>
-			<li>Body_Hulk</li>
-			<li>ChemicalDependency_Alcohol</li>
-			<li>Hair_SandyBlonde</li>
-			<li>Learning_Slow</li>
-			<li>MaxTemp_LargeIncrease</li>
-			<li>MeleeDamage_Strong</li>
-			<li>MinTemp_LargeDecrease</li>
-			<li>NakedSpeed</li>
-			<li>Nearsighted</li>
-			<li>Robust</li>
-			<li>Unstoppable</li>
-			<li>WoundHealing_Fast</li>
-		</genes>
-	</XenotypeDef>
+    <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Taggerung_Grignrson_Xenotype</defName>
+        <label>Shard of Grignr</label>
+        <description>The many Grignrs, splintered across the multiverse have retained their unique genetic makeup despite being exposed to extreme hyper-concentrated levels of stupidity.\nThey retain a dependency on booze so strong that it has changed their very genetic makeup, they are tough and exceptional melee fighters that would never use a cowards weapon, while unfortunately being absolute idiots.</description>
+        <descriptionShort>Grignr Smash!</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+        <inheritable>true</inheritable>
+        <combatPowerFactor>1.6</combatPowerFactor>
+        <genes>
+            <li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
+            <li MayRequire="sarg.alphagenes">AlphaGenes_AnimalSumMajor_Bear_Polar</li>
+            <li MayRequire="sarg.alphagenes">AG_HardBones</li>
+            <li MayRequire="sarg.alphagenes">AG_Filthy</li>
+            <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_SlowNeuralHeat</li>
+            <li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
+            <li>Aggression_Aggressive</li>
+            <li>AptitudeTerrible_Shooting</li>
+            <li>AptitudeTerrible_Crafting</li>
+            <li>AptitudeTerrible_Artistic</li>
+            <li>AptitudeTerrible_Medicine</li>
+            <li>AptitudeTerrible_Intellectual</li>
+            <li>Body_Hulk</li>
+            <li>ChemicalDependency_Alcohol</li>
+            <li>Hair_SandyBlonde</li>
+            <li>Learning_Slow</li>
+            <li>MaxTemp_LargeIncrease</li>
+            <li>MeleeDamage_Strong</li>
+            <li>MinTemp_LargeDecrease</li>
+            <li>NakedSpeed</li>
+            <li>Nearsighted</li>
+            <li>Robust</li>
+            <li>Unstoppable</li>
+            <li>WoundHealing_Fast</li>
+        </genes>
+    </XenotypeDef>
 
-	<ThingDef ParentName="HatBase" Name="Taggerung_Grignr_Hat">
-		<defName>Taggerung_Grignr_Hat</defName>
-		<tradeability>Buyable</tradeability>
-		<techLevel>Neolithic</techLevel>
-		<label>grignrson hat</label>
-		<description>A majestic item of headwear made from the pelt of of a mighty Joris lined with Snowhare fur. The original was made from a beast struck down in single combat, though if this is THE Hat of Grignr himself, who is to say. There is some light staining which might be, blood, beer or something more sinister.\n\nWearing this headpiece represents one as a member of the legendary Grignrson clan at a mere glance.\n\nWhen a Grignrson makes their hat they often must spend many hours working with the slain animals to eventually emerge triumphant with a hat worthy of a Grignrson.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<color>(254,254,254)</color>
-		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite />
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-				<li>CraftingSpot</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<Corpse_Bear_Polar>1</Corpse_Bear_Polar>
-			<Corpse_Snowhare>1</Corpse_Snowhare>
-			<Silver>42</Silver>
-		</costList>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>2</Mass>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<Insulation_Cold>42</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<wornGraphicPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</wornGraphicPath>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-	</ThingDef>
+    <ThingDef ParentName="HatBase" Name="Taggerung_Grignr_Hat">
+        <defName>Taggerung_Grignr_Hat</defName>
+        <tradeability>Buyable</tradeability>
+        <techLevel>Neolithic</techLevel>
+        <label>grignrson hat</label>
+        <description>A majestic item of headwear made from the pelt of of a mighty Joris lined with Snowhare fur. The original was made from a beast struck down in single combat, though if this is THE Hat of Grignr himself, who is to say. There is some light staining which might be, blood, beer or something more sinister.\n\nWearing this headpiece represents one as a member of the legendary Grignrson clan at a mere glance.\n\nWhen a Grignrson makes their hat they often must spend many hours working with the slain animals to eventually emerge triumphant with a hat worthy of a Grignrson.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(254,254,254)</color>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite />
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Corpse_Bear_Polar>1</Corpse_Bear_Polar>
+            <Corpse_Snowhare>1</Corpse_Snowhare>
+            <Silver>42</Silver>
+        </costList>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <WorkToMake>10000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <Insulation_Cold>42</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.20</SlaveSuppressionOffset>
+            <MeleeHitChance>0.5</MeleeHitChance>
+            <SocialImpact>0.4</SocialImpact>
+            <ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <wornGraphicPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</wornGraphicPath>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase" Name="Taggerung_Grignr_Hat_Custom">
+        <defName>Taggerung_Grignr_Hat_Custom</defName>
+        <tradeability>All</tradeability>
+        <techLevel>Neolithic</techLevel>
+        <label>custom lined grignrson hat</label>
+        <description>A majestic item of headwear. The original was made from a beast struck down in single combat.\n\nWearing this headpiece represents one as a member of the legendary Grignrson clan at a mere glance.\n\nWhen a Grignrson makes their hat they often must spend many hours working with the slain animals to eventually emerge triumphant with a hat worthy of a Grignrson.\n\nUnfortunately the traditional materials of bear and hare are not always available. This hat, while it would never pass for the original due to its non-traditional process, still embodies the indomitable spirit of a true Grignrson!</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(254,254,254)</color>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite />
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Silver>100</Silver>
+            <Beer>10</Beer>
+        </costList>
+        <statBases>
+            <MarketValue>650</MarketValue>
+            <WorkToMake>8000</WorkToMake>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <Insulation_Cold>40</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.20</SlaveSuppressionOffset>
+            <MeleeHitChance>0.5</MeleeHitChance>
+            <ShootingAccuracyPawn>-0.8</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costStuffCount>75</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <wornGraphicPath>Things/Item/Equipment/Headgear/GrignrHat/GrignrHat</wornGraphicPath>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+    </ThingDef>
 </Defs>
