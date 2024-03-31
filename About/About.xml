@@ -4,6 +4,7 @@
     <author>Taggerung, Mr Samuel Streamer</author>
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <packageId>Taggerung.GrignrHappensBy</packageId>
     <description>Replaces the Stranger in Black event with Grignr from the Mr Samuel Streamer extended universe. After the events of the RPG Adventure series, Grignr's adventures now continue across trillions of timelines and multitudinous multiverses.</description>

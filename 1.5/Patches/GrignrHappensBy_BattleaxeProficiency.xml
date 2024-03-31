@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_BattleAxe"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/XenotypeDef[defName="Taggerung_Grignrson_Xenotype"]/genes</xpath>
+            <value>
+                <li MayRequire="vanillaracesexpanded.hussar">VREHT_WeaponAptitude_VWE_MeleeWeapon_BattleAxe</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/XenotypeDef[defName="Taggerung_Grignrson_Xenotype"]/genes</xpath>
+            <value>
+                <li MayRequire="vanillaracesexpanded.hussar">VREHT_WeaponAptitude_MeleeWeapon_Axe</li>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
