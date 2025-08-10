@@ -73,16 +73,14 @@
         </apparelDisallowTags>
         <apparelColor>(255,255,255)</apparelColor>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-        <favoriteColor>(255,255,255)</favoriteColor>
+        <favoriteColor MayRequire="Ludeon.RimWorld.Ideology">LightGrey</favoriteColor>
         <forcedHair MayRequire="Erin.Hair2">ERNrivia</forcedHair>
         <forcedHairColor>RGBA(0.787, 0.595, 0.347, 1.000)</forcedHairColor>
         <skinColorOverride>RGBA(1.000, 0.929, 0.827, 1.000)</skinColorOverride>
         <fixedGender>Male</fixedGender>
         <nameMaker>Taggerung_Grignrson_NameMaker</nameMaker>
         <techHediffsMaxAmount>1</techHediffsMaxAmount>
-        <techHediffsRequired>
-            <li MayRequire="Ludeon.RimWorld.Ideology">PsychicAmplifier</li>
-        </techHediffsRequired>
+        <techHediffsRequired />
         <biocodeWeaponChance>0.0</biocodeWeaponChance>
         <initialWillRange>0~0</initialWillRange>
         <initialResistanceRange>0~2</initialResistanceRange>
